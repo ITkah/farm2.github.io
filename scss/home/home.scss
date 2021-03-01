@@ -1,0 +1,447 @@
+.main_section {
+    margin-bottom: 90px;
+    height: 85vh;
+    position: relative;
+    @media (max-width: 990px) {
+        margin-bottom: 35px;
+        height: 400px;
+    }
+    &::before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        opacity: .4;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #316948;
+    }
+    .container {
+        height: 100%;
+        width: 100%;
+    }
+    .slider_info_wrap {
+        height: 100%;
+        width: 100%;
+    }
+    .slider_info {
+        position: relative;
+        z-index: 9;
+        height: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px;
+        .slider_pretitle {
+            font: 500 2rem 'Poppins', sans-serif;
+            color: #fff;
+            margin-bottom: 25px;
+            @media (max-width: 990px) {
+                font: 500 1.25rem 'Poppins', sans-serif;
+            }
+        }
+        .slider_title {
+            font: 700 6rem 'Poppins', sans-serif;
+            text-align: center;
+            color: #fff;
+            @media (max-width: 990px) {
+                font: 700 2.75rem 'Poppins', sans-serif;
+            }
+        }
+        .slider_btn {
+            border-radius: 5px;
+            border: 3px solid #f1cf69;
+            padding: 10px 30px;
+            color: #000;
+            background: transparent;
+            display: inline-block;
+            appearance: none;
+            text-transform: uppercase;
+            font: 600 .87rem 'Poppins', sans-serif;
+            background: #f1cf69;
+            @media (max-width: 576px) {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.agricom_wrap {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 20px;
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr;
+    }
+    .agricom_title {
+        color: #333;
+        font: 700 2rem/1 'Poppins', sans-serif;
+        @media (max-width: 990px) {
+            font: 700 1.5rem/1 'Poppins', sans-serif;
+        }
+        br {
+            @media (max-width: 990px) {
+                display: none;
+            }
+        }
+    }
+    .agricom_pretitle {
+        margin-bottom: 15px;
+        font: 500 1rem 'Poppins', sans-serif;
+        color: #333;
+    }
+    .agricom_text {
+        color: #777;
+        font: 400 .95rem 'Poppins', sans-serif;
+        margin-bottom: 25px;
+    }
+    .agricom_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        .agricom_icon_box:last-child {
+            @media (max-width: 990px) {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+        img {
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #333;
+            font: 500 1rem 'Poppins', sans-serif;
+            text-align: center;
+        }
+    }
+}
+
+.awesome {
+    background: #e9f1ee;
+    .awesome_wrap {
+        padding: 60px 0;
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-gap: 20px;
+        align-items: center;
+        @media (max-width: 990px) {
+            padding: 20px 0;
+            grid-template-columns: 1fr;
+        }
+        img {
+            max-width: 100%;
+            height: 150px;
+            display: block;
+            @media (max-width: 990px) {
+                margin: 0 auto;
+                height: auto;
+            }
+        }
+        .awesome_text {
+            color: #777;
+            font: 400 .95rem 'Poppins', sans-serif;
+        }
+    }
+}
+
+.find_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    align-items: center;
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .find_box {
+        max-width: 525px;
+        margin: 0 auto;
+        padding: 25px 10px;
+        margin-right: 40px;
+        @media (max-width: 1200px) {
+            max-width: 100%;
+            margin: 0;
+        }
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .find_title {
+        margin-bottom: 10px;
+        font: 600 2rem 'Poppins', sans-serif;
+        color: #333;
+        @media (max-width: 990px) {
+            font: 600 1.5rem 'Poppins', sans-serif;
+        }
+    }
+    .find_pretitle {
+        margin-bottom: 15px;
+        font: 500 1rem 'Poppins', sans-serif;
+        color: #333;
+    }
+    .find_text {
+        color: #777;
+        font: 400 .95rem 'Poppins', sans-serif;
+        margin-bottom: 35px;
+    }
+    .find_btn {
+        border-radius: 5px;
+        border: 3px solid #f1cf69;
+        padding: 8px 25px;
+        color: #000;
+        background: transparent;
+        display: inline-block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        text-transform: uppercase;
+        font: 600 .87rem 'Poppins', sans-serif;
+        @media (max-width: 576px) {
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    }
+}
+
+.poduct {
+    background: #e9f1ee;
+    .container {
+        padding: 10px 0;
+    }
+    .product_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .product_box {
+        height: 285px;
+        position: relative;
+        @media (max-width: 576px) {
+            height: auto;
+        }
+        .product_sm_box {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(49, 105, 72, .4);
+            }
+            .product_sm_title {
+                color: #fff;
+                font: 600 1.1rem 'Poppins', sans-serif;
+                position: relative;
+                z-index: 9;
+            }
+            .product_sm_text {
+                color: #fff;
+                position: relative;
+                z-index: 9;
+                font: 300 .9rem 'Poppins', sans-serif;
+            }
+        }
+        img {
+            max-width: 100%;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .product_box_custom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media (max-width: 576px) {
+            margin-bottom: 15px;
+        }
+        .product_title {
+            margin-bottom: 5px;
+            font: 700 1.75rem 'Poppins', sans-serif;
+        }
+        .product_text {
+            margin-bottom: 10px;
+            color: #777;
+            font: 400 .95rem 'Poppins', sans-serif;
+        }
+        .product_btn {
+            color: #4a8b71;
+            text-decoration: underline;
+            text-transform: uppercase;
+            font: 600 .8rem 'Poppins', sans-serif;
+        }
+    }
+}
+
+.contact_home_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+    }
+    .contact_feedback_wrap {
+        padding: 80px 60px;
+        background: #4a8b71;
+        @media (max-width: 990px) {
+            padding: 30px 15px;
+        }
+        .contact_feedback_box {
+            max-width: 540px;
+            margin: 0 auto;
+            margin-right: 0;
+            @media (max-width: 990px) {
+                max-width: 100%;
+                margin: 0;
+            }
+        }
+    }
+    .contact_form_wrap {
+        padding: 80px 60px;
+        background: #282828;
+        @media (max-width: 990px) {
+            padding: 30px 15px;
+        }
+        .contact_form_box {
+            max-width: 540px;
+            margin: 0 auto;
+            margin-left: 0;
+            @media (max-width: 990px) {
+                max-width: 100%;
+                margin: 0;
+            }
+        }
+    }
+    .contact_title {
+        color: #fff;
+        margin-bottom: 15px;
+        font: 700 1.5rem 'Poppins', sans-serif;
+        @media (max-width: 990px) {
+            font: 700 1.2rem 'Poppins', sans-serif;
+        }
+    }
+    .contact_text {
+        font: 400 .9rem/24px 'Poppins', sans-serif;
+        color: #fff;
+        margin-bottom: 25px;
+        @media (max-width: 990px) {
+            margin-bottom: 15px;
+        }
+        br {
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
+    }
+    .contact_item {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+        font: 400 1rem 'Poppins', sans-serif;
+        img {
+            margin-right: 15px;
+        }
+    }
+    .form_feedback {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        button {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            color: #fff;
+            border: 3px solid #fff;
+            border-radius: 10px;
+            background: transparent;
+            outline: none;
+            font: 400 1rem 'Poppins', sans-serif;
+        }
+        .form_box {
+            display: flex;
+            position: relative;
+            img {
+                position: absolute;
+                right: 0;
+                top: 10px;
+            }
+            input {
+                background: transparent;
+                color: #fff;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px 5px;
+                appearance: none;
+                outline: none;
+                border: none;
+                font: 400 1rem 'Poppins', sans-serif;
+                border-bottom: 1px solid rgba(255, 255, 255, .37);
+            }
+            textarea {
+                background: transparent;
+                color: #fff;
+                resize: none;
+                outline: none;
+                width: 100%;
+                height: 100px;
+                box-sizing: border-box;
+                appearance: none;
+                padding: 10px 5px;
+                outline: none;
+                border: none;
+                font: 400 1rem 'Poppins', sans-serif;
+                border-bottom: 1px solid rgba(255, 255, 255, .37);
+            }
+        }
+    }
+}
+
+.map {
+    margin-bottom: 30px;
+    @media (max-width: 990px) {
+        margin-bottom: 15px;
+    }
+    iframe {
+        width: 100%;
+        height: 500px;
+        @media (max-width: 990px) {
+            height: 350px;
+        }
+    }
+}

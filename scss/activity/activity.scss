@@ -1,0 +1,98 @@
+.activity_top {
+    .activity_top_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            max-width: 100%;
+            grid-gap: 0;
+        }
+        img {
+            position: relative;
+            display: block;
+            max-height: 450px;
+            margin: 0 auto;
+        }
+        .activity_title {
+            margin-bottom: 5px;
+            color: #4a4b4b;
+            font: 600 1.4rem 'Poppins', sans-serif;
+            @media (max-width: 990px) {
+                font: 600 1.25rem 'Poppins', sans-serif;
+            }
+        }
+        .activity_text {
+            color: #4a4b4b;
+            font: 400 1rem/22px 'Poppins', sans-serif;
+        }
+    }
+}
+
+.activity_bottom {
+    background: #eff2f5;
+    overflow: hidden;
+    .container {
+        padding: 50px 0 0 0;
+        @media (max-width: 990px) {
+            padding: 25px 0 0 0;
+        }
+    }
+    .activity_bottom_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            max-width: 100%;
+            grid-gap: 0;
+        }
+        img {
+            position: relative;
+            display: block;
+            max-height: 600px;
+            margin: 0 auto;
+            bottom: -30px;
+            @media (max-width: 990px) {
+                max-height: 420px;
+                grid-row-start: 2;
+                bottom: -50px;
+            }
+        }
+        .activity_title {
+            margin-bottom: 5px;
+            color: #4a4b4b;
+            font: 600 1.4rem 'Poppins', sans-serif;
+            @media (max-width: 990px) {
+                font: 600 1.25rem 'Poppins', sans-serif;
+            }
+        }
+        .activity_text {
+            margin-bottom: 20px;
+            color: #4a4b4b;
+            font: 400 1rem/22px 'Poppins', sans-serif;
+        }
+        .activity_btn {
+            font: 600 1rem 'Poppins', sans-serif;
+            border-radius: 35px;
+            color: #000;
+            display: inline-block;
+            border: 2px solid #f1cf69;
+            padding: 10px 40px;
+            background: #f1cf69;
+            transition: .2s;
+            @media (max-width: 576px) {
+                width: 100%;
+                display: block;
+                box-sizing: border-box;
+                text-align: center;
+            }
+        }
+    }
+}
