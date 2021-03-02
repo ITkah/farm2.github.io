@@ -85,7 +85,7 @@
         color: #333;
         font: 700 2rem/1 'Poppins', sans-serif;
         @media (max-width: 990px) {
-            font: 700 1.5rem/1 'Poppins', sans-serif;
+            font: 700 1.5rem/30px 'Poppins', sans-serif;
         }
         br {
             @media (max-width: 990px) {
@@ -128,6 +128,16 @@
             font: 500 1rem 'Poppins', sans-serif;
             text-align: center;
         }
+    }
+}
+
+.bg_gray {
+    background: #e9f1ee;
+    .container {
+        padding: 50px 0;
+    }
+    .agricom_text {
+        margin: 0;
     }
 }
 
