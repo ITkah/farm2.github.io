@@ -1,0 +1,188 @@
+.career_info_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    .career_info_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        align-items: center;
+        @media (max-width: 990px) {
+            grid-gap: 20px;
+            grid-template-columns: 1fr;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            @media (max-width: 990px) {
+                grid-row-start: 1;
+                max-width: 100%;
+            }
+        }
+        .career_title {
+            margin-bottom: 10px;
+            color: #333;
+            font: 700 1.5rem/30px 'Poppins', sans-serif;
+        }
+        .career_text {
+            color: #333;
+            font: 400 1rem 'Poppins', sans-serif;
+        }
+    }
+    .career_info_wrap:nth-child(2n) {
+        img {
+            grid-column-start: 1;
+            grid-row-start: 1;
+        }
+    }
+}
+
+.career_inside {
+    background: #e9f1ee;
+    .container {
+        padding: 30px 0;
+    }
+    .career_inside_wrap {
+        max-width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+        @media (max-width: 990px) {
+            max-width: 100%;
+            box-sizing: border-box;
+            grid-template-columns: 1fr;
+            grid-gap: 25px;
+        }
+        .career_inside_box {
+            .career_inside_title {
+                color: #4a8b71;
+                margin-bottom: 15px;
+                font: 700 2rem/1 'Poppins', sans-serif;
+                @media (max-width: 990px) {
+                    font: 700 1.5rem/30px 'Poppins', sans-serif;
+                }
+            }
+            .career_inside_pretitle {
+                color: #4a8b71;
+                margin-bottom: 15px;
+                font: 500 1.125rem/1 'Poppins', sans-serif;
+            }
+            .career_inside_text {
+                color: #777;
+                font: 400 .95rem 'Poppins', sans-serif;
+            }
+        }
+    }
+}
+
+.form_career {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    .label {
+        margin-bottom: 0;
+        font: 600 1rem 'Poppins', sans-serif;
+        color: #4a8b71;
+    }
+    button {
+        color: #4a8b71;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border: 2px solid #4a8b71;
+        max-width: 200px;
+        background: transparent;
+        font: 500 1rem 'Poppins', sans-serif;
+        transition: .2s;
+        @media (max-width: 990px) {
+            max-width: 100%;
+        }
+        &:hover {
+            color: #fff;
+            background: #4a8b71;
+        }
+    }
+    .form_career_box {
+        .label {
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            background: #fff;
+            appearance: none;
+            outline: none;
+            border: none;
+            font: 400 .9rem 'Poppins', sans-serif;
+        }
+        select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            background: #fff;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            font: 400 .9rem 'Poppins', sans-serif;
+        }
+    }
+    .form_career_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .checkbox input[type="checkbox"] {
+        opacity: 0;
+        position: absolute;
+    }
+    .checkbox label {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 30px;
+        color: #4a8b71;
+        font: 500 1rem 'Poppins', sans-serif;
+    }
+    .checkbox label::before,
+    .checkbox label::after {
+        position: absolute;
+        content: "";
+        /*Needed for the line-height to take effect*/
+        display: inline-block;
+    }
+    /*Outer box of the fake checkbox*/
+    .checkbox label::before {
+        height: 16px;
+        width: 16px;
+        border: 3px solid #4a8b71;
+        left: 0px;
+        /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+         *to vertically center it.
+         */
+        top: 0;
+    }
+    /*Checkmark of the fake checkbox*/
+    .checkbox label::after {
+        height: 5px;
+        width: 9px;
+        border-left: 3px solid;
+        border-bottom: 3px solid;
+        transform: rotate(-45deg);
+        left: 5px;
+        top: 5px;
+    }
+    /*Hide the checkmark by default*/
+    .checkbox input[type="checkbox"]+label::after {
+        content: none;
+    }
+    /*Unhide on the checked state*/
+    .checkbox input[type="checkbox"]:checked+label::after {
+        content: "";
+    }
+}
