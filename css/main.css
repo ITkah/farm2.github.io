@@ -904,6 +904,12 @@ header {
     color: #333;
     font: 400 1.125rem 'Poppins', sans-serif; }
 
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
 .about_top_wrap {
   display: grid;
   height: 500px;
